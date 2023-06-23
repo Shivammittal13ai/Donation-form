@@ -1,0 +1,82 @@
+<!-- Basic Html form using some css stylesheet (just a pratice) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Project-4/style.css">
+    <title>Donation form</title>
+</head>
+<body>
+    <h1>Donation form</h1>
+    <form action="backend.php">
+        <section>
+            <label for="name">Name :</label>
+            <input type="text" placeholder="Name" name="name" id="name">
+        </section> <br>
+        
+        <section>
+            <label for="phone_no">Phone number :</label>
+            <input type="tel" placeholder="Phone no." name="Phone number" id="phone_no">
+        </section> <br>
+
+        <section>
+            <label for="email">Email :</label>
+            <input type="email" placeholder="Email" name="email" id="email">
+        </section> <br>
+
+        <section>
+            <label for="password">Password :</label>
+            <input type="password" placeholder="password" name="password" id="password" required>
+        </section> <br>
+
+        <section>
+            <label for="DOB">Date of Birth :</label>
+            <input type="date" placeholder="DOB" name="DOB" id="DOB">
+        </section> <br>
+
+        <section>
+            <label for="address">Address :</label>
+            <textarea name="address" id="address" cols="40" rows="5" placeholder="address"></textarea>
+        </section> <br>
+
+        <section>
+            <label for="mf">Gender :</label>
+            <input type="radio" name="mf" id="mf">Male
+            <input type="radio" name="mf" id="mf" checked>Female
+            <input type="radio" name="mf" id="mf">Other
+        </section> <br>
+
+        <h2>Card details</h2>
+
+        <section>
+            <label for="card no">Card number :</label>
+            <input type="number" placeholder="card no" name="card no" id="card no">
+        </section> <br>
+
+        <section>
+            <label for="expiry date">Expiry Date :</label>
+            <input type="date" placeholder="expiry date" name="expiry date" id="expiry date">
+        </section> <br>
+
+        <section>
+            <label for="cvv">CVV :</label>
+            <input type="password" placeholder="cvv" name="cvv" id="cvv">
+        </section> <br>
+
+        <section>
+            <label for="Ctype">Card type :</label>
+            <select name="Ctype" id="Ctype">
+                <option value="Visa">Visa</option>
+                <option value="Paytm" selected>Paytm</option>
+                <option value="Paypal">Paypal</option>
+            </select>
+        </section> <br>
+
+        <pre>
+<input type="reset" value="Reset now" id="reset">        <input type="submit" value="Donate now" id="submit">
+        </pre>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+*{
+    color: aliceblue;
+    background-color: black;
+}
+section{
+    font-size: large;
+    font-weight: 300px;
+}
+h1,h2{
+    text-align: center;
+    text-decoration: underline;
+}
+#submit,#reset{
+    color: aqua;
+    background-color: burlywood;
+}
